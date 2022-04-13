@@ -16,6 +16,7 @@
     <?php
     for($i = 0; $i < 5; $i++){
         $numero = $_POST["n$i"];
+        SomaDosDivisores($numero);
     }
 
     function SomaDosDivisores($n){
