@@ -1,0 +1,15 @@
+{
+    "name": "aluno/projeto",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Projeto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cesarcaiobd",
+            "email": "100534850+cesarcaiobd@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
