@@ -1,5 +1,7 @@
 <?php 
 
+//use Aluno\ProjetoPhp\Controller\ExercicioController;
+
 require_once __DIR__."/vendor/autoload.php";
 
 //aqui a gente recupera o que o usuário digitou e qual método http ele utilizou
@@ -12,7 +14,13 @@ $router = new Aluno\ProjetoPhp\Router($method, $path);
 
 //ADICIONAR AS ROTAS VÁLIDAS ABAIXO
 
+$router->get('/ola-mundo',function(){
+    return 'Olá Mundo!';
+});
 
+$router->get('/exemplo','Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+
+$router->post('/exemplo-resultado','Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 
@@ -23,3 +31,5 @@ if(!$result){
     echo "Página não encontrada";
     die();
 }
+
+echo $result($router->getParams());
