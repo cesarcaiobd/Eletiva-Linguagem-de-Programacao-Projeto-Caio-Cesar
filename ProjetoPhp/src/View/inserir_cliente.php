@@ -11,9 +11,11 @@
     <title>Inserir Cliente</title>
   </head>
   <body>
+      <?php require_once "barra_navegacao.php"; ?>
+    <div class="container">
     <h1>Inserir Cliente</h1>
 
-    <form action="" methos="post">
+    <form action="/cliente/inserir" method="post">
         <div class="row">
             <div class="col-5">
                 <label for="nome" class="label-control">Informe o nome:</label>
@@ -34,6 +36,7 @@
             </div>
         </div>
     </form>
+    </div>
 
    
    
