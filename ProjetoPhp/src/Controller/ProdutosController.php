@@ -7,7 +7,7 @@ use Aluno\ProjetoPhp\Model\Entity\Produtos;
 
 class ProdutosController{
 
-    //private ClientesDAO $dao;
+    //private ProdutosDAO $dao;
 
     public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_produto.php";
