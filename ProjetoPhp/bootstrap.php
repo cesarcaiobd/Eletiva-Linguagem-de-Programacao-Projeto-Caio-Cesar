@@ -22,6 +22,46 @@ $router->get('/exemplo',
 $router->post('/exemplo-resultado',
         'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 
+//ROTAS EXERCICIO 1
+
+$router->get('/exercicio1', 
+        'Aluno\ProjetoPhp\Controller\Exercicio1Controller::exibir');
+
+$router->post('/exercicio1-resultado',
+        'Aluno\ProjetoPhp\Controller\Exercicio1Controller::exibirResultado');
+
+//ROTAS EXERCICIO 2
+
+$router->get('/exercicio2', 
+        'Aluno\ProjetoPhp\Controller\Exercicio2Controller::exibir');
+
+$router->post('/exercicio2-resultado',
+        'Aluno\ProjetoPhp\Controller\Exercicio2Controller::exibirResultado');
+
+//ROTAS EXERCICIO 3
+
+$router->get('/exercicio3', 
+        'Aluno\ProjetoPhp\Controller\Exercicio3Controller::exibir');
+
+$router->post('/exercicio3-resultado',
+        'Aluno\ProjetoPhp\Controller\Exercicio3Controller::exibirResultado');
+
+//ROTAS EXERCICIO 4
+
+$router->get('/exercicio4', 
+        'Aluno\ProjetoPhp\Controller\Exercicio4Controller::exibir');
+
+$router->post('/exercicio4-resultado',
+        'Aluno\ProjetoPhp\Controller\Exercicio4Controller::exibirResultado');
+
+//ROTAS EXERCICIO 5
+
+$router->get('/exercicio5', 
+        'Aluno\ProjetoPhp\Controller\Exercicio5Controller::exibir');
+
+$router->post('/exercicio5-resultado',
+        'Aluno\ProjetoPhp\Controller\Exercicio5Controller::exibirResultado');
+
 //ROTAS CLIENTE
 
 $router->get('/cliente/novo',

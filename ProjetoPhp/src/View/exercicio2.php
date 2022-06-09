@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exercicio 1</title>
+    <title>Exercicio 2 lista 1 index</title>
   </head>
   <body class="container">
       
@@ -16,13 +16,13 @@
         <div class="row mt-5">
 
             <div class="col">
-                <label for="valorpago" class="label-control">Valor pago: </label>
-                <input type="text" id="valorpago" name="valorpago" class="form-control">
+                <label for="valorquilo" class="label-control">Valor do quilo do produto:</label>
+                <input type="text" id="valorquilo" name="valorquilo" class="form-control">
             </div>
 
             <div class="col">
-                <label for="valorproduto" class="label-control">Valor do produto: </label>
-                <input type="text" id="valorproduto" name="valorproduto" class="form-control">
+                <label for="qtdquilo" class="label-control">Quantidade de quilos consumida:</label>
+                <input type="text" id="qtdquilo" name="qtdquilo" class="form-control">
             </div>
 
         </div>
@@ -34,10 +34,10 @@
         </div>
 
     </form>
-
+    
     <?php
 
-    if (isset($soma)) echo "O valor da soma é $soma";
+    if (isset($resultado)) echo "Total: $resultado";
 
     ?>
 

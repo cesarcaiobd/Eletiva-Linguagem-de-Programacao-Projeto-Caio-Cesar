@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Aluno\Lista_1_segunda\Controller;
+namespace Aluno\ProjetoPhp\Controller;
 
 
-class ExercicioController
+class Exercicio1Controller
 {
 
     public static function exibir(){
@@ -12,9 +12,9 @@ class ExercicioController
     }
 
     public static function exibirResultado(){
-        $valor1 = $_POST['valor1'];
-        $valor2 = $_POST['valor2'];
-        $soma = $valor1 + $valor2;
+        $valorPago = $_POST["valorpago"];
+        $valorProduto = $_POST["valorproduto"];
+        $resultado = $valorPago - $valorProduto;
         require_once("../src/View/exercicio1.php");
     }
 
